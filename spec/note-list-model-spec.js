@@ -1,7 +1,7 @@
 (function(exports) {
   function testNoteListsAllNotes() {
     var notelist = new NoteList();
-    if (notelist.all().length !== 0 && notelist.all().isArray() === false) {
+    if (Array.isArray(notelist.all()) !== true) {
       throw new Error("can't find list array");
     }
   }
