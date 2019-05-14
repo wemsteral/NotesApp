@@ -1,0 +1,23 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wemsteral/NotesApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wemsteral/NotesApp/issues"
+  },
+  "homepage": "https://github.com/wemsteral/NotesApp#readme",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "require": "^2.4.20"
+  }
+}
