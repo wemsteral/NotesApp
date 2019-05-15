@@ -1,5 +1,6 @@
 const { guarantee, check, xcheck, end, group } = require("wemtester");
-const note = require("../src/note-model");
+const { Note } = require("../src/note-model");
+var assert = require("./assert");
 
 (function(exports) {
   function testNoteDefaultsToArgument() {

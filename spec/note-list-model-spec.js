@@ -1,3 +1,6 @@
+const { guarantee, check, xcheck, end, group } = require("wemtester");
+const { NoteList } = require("../src/note-list-model");
+
 (function(exports) {
   function isInitialisedWithEmptyArray() {
     var notelist = new NoteList();
