@@ -18,3 +18,24 @@
 
   addsNoteToAllArray();
 })(this);
+
+(function(exports) {
+  function firstNoteIdIsZero() {
+    var newNoteList = new NoteList();
+    newNoteList.add("id should be 0");
+    assert.isTrue(newNoteList.all()[0].id() === 0);
+  }
+  firstNoteIdIsZero();
+})(this);
+
+(function(exports) {
+  function thirdNoteIdIs2() {
+    var newNoteList = new NoteList();
+    newNoteList.add("id should be 0");
+    newNoteList.add("id should be 1");
+    newNoteList.add("id should be 2");
+    assert.isTrue(newNoteList.all()[2].id() === 2);
+    console.log("correct");
+  }
+  thirdNoteIdIs2();
+})(this);

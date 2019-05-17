@@ -7,5 +7,9 @@ NoteList.prototype.all = function() {
 };
 
 NoteList.prototype.add = function(string) {
-  this._notes.push(new Note(string));
+  this._notes.push(new Note(string, this.nextNoteId()));
+};
+
+NoteList.prototype.nextNoteId = function() {
+  return this.all().length;
 };
