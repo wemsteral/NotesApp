@@ -8,18 +8,19 @@
   NoteDouble.prototype.text = function() {
     return this._text;
   };
+  // test 1
   function testReturnSingleNoteText() {
     noteDouble = new NoteDouble("hello world");
     singleNoteView = new SingleNoteView(noteDouble);
-    console.log(singleNoteView.returnNoteText());
+
     assert.isTrue(singleNoteView.returnNoteText() === "hello world");
   }
   testReturnSingleNoteText();
-
+  // test 2
   function testReturnTextInHtmlString() {
     noteDouble = new NoteDouble("put me in html");
     singleNoteView = new SingleNoteView(noteDouble);
-    console.log(singleNoteView.noteHTML());
+
     assert.isTrue(singleNoteView.noteHTML() === "<div>put me in html</div>");
   }
   testReturnTextInHtmlString();
