@@ -6,7 +6,7 @@ NoteListView.prototype.list = function() {
   var string = "<ul>";
   this._noteList.all().map(function(note) {
     string +=
-      "<li><div><a href=#notes/" +
+      "<li><div><a href=#" +
       note.id() +
       ">" +
       note.text().substr(0, 20) +

@@ -6,4 +6,6 @@ window.addEventListener("load", function() {
   controller.addNote("Favourite drink: seltzer");
   controller.addNote("Favourite drink: apple");
   controller.updateDOM();
+  controller.goToSingleNote();
+  console.log(controller.getIdFromUrl(window.location));
 });

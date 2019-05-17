@@ -20,7 +20,7 @@
     console.log(noteListView.list());
     assert.isTrue(
       noteListView.list() ===
-        "<ul><li><div><a href=#notes/0>hello</a></div></li>\n<li><div><a href=#notes/1>world</a></div></li>\n<li><div><a href=#notes/2>!!!!!</a></div></li>\n</ul>"
+        "<ul><li><div><a href=#0>hello</a></div></li>\n<li><div><a href=#1>world</a></div></li>\n<li><div><a href=#2>!!!!!</a></div></li>\n</ul>"
     );
   }
   testReturn3NoteList();
@@ -35,7 +35,7 @@
 
     assert.isTrue(
       noteListView.list() ===
-        "<ul><li><div><a href=#notes/0>this is a 20+ charac</a></div></li>\n</ul>"
+        "<ul><li><div><a href=#0>this is a 20+ charac</a></div></li>\n</ul>"
     );
   }
   testReturnStringLength();
