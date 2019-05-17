@@ -17,10 +17,10 @@
     noteList.add("!!!!!");
 
     var noteListView = new NoteListView(noteList);
-
+    console.log(noteListView.list());
     assert.isTrue(
       noteListView.list() ===
-        "<ul><li><div>hello</div></li>\n<li><div>world</div></li>\n<li><div>!!!!!</div></li>\n</ul>"
+        "<ul><li><div><a href=#notes/0>hello</a></div></li>\n<li><div><a href=#notes/1>world</a></div></li>\n<li><div><a href=#notes/2>!!!!!</a></div></li>\n</ul>"
     );
   }
   testReturn3NoteList();
@@ -28,14 +28,14 @@
 
 (function(exports) {
   function testReturnStringLength() {
-    var noteList = new NoteList();
-    noteList.add("this is a 20+ character string, how wonderful!");
+    var newNoteList = new NoteList();
+    newNoteList.add("this is a 20+ character string, how wonderful!");
 
-    var noteListView = new NoteListView(noteList);
+    var noteListView = new NoteListView(newNoteList);
 
     assert.isTrue(
       noteListView.list() ===
-        "<ul><li><div>this is a 20+ charac</div></li>\n</ul>"
+        "<ul><li><div><a href=#notes/0>this is a 20+ charac</a></div></li>\n</ul>"
     );
   }
   testReturnStringLength();
